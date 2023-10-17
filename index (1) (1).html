@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Circular Diagrams</title>
+  <style>
+    body {
+      background-image: url('https://wallpapers.com/images/featured/v9sqijtzusq0u8hc.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      font-size: 20px;  
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    h2 {
+      color: red;
+      text-align: center;
+    }
+    
+    #buttons-container {
+      display: flex;
+      justify-content: center;
+      max-width: 800px;
+      margin: 20px auto;
+    }
+    
+    .diagram-content {
+      display: none;
+      max-width: 500px;
+      margin: 20px;
+    }
+    
+    .active-content {
+      display: block;
+    }
+    
+    h3 {
+      color: bisque;
+    }
+    
+    p {
+      color: white;
+      line-height: 1.6;
+    }
+    
+    .button-link {
+      color: aliceblue;
+      text-decoration: none;
+      cursor: pointer;
+      background-color: rgba(0, 0, 0, 0.3);
+      padding: 5px 15px;
+      border-radius: 5px;
+    }
+    
+    .button-link:hover {
+      background-color: rgba(0, 0, 0, 0.5);
+      color: cyan;
+    }
+    
+    img {
+      width: 100%;
+      max-width: 450px;
+      height: auto;
+      display: block;
+      margin: 20px auto;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+  </style>
+  <script>
+    function showDiagram(diagramId) {
+      var diagramContent = document.getElementById(diagramId);
+      var allDiagramContent = document.getElementsByClassName('diagram-content');
+      for (var i = 0; i < allDiagramContent.length; i++) {
+        allDiagramContent[i].classList.remove('active-content');
+      }
+      diagramContent.classList.add('active-content');
+    }
+  </script>
+</head>
+<body>
+  <h2>Circular Diagram Options</h2>
+  <div id="buttons-container">
+    <ul style="color:aqua; list-style: none; padding: 0;">
+      <li><a class="button-link" onclick="showDiagram('Switch_on')">Switch_on</a></li>
+      <li><a class="button-link" onclick="showDiagram('Switch_off')">Switch_off</a></li>
+      <li><a class="button-link" onclick="showDiagram('Battery')">Battery</a></li>
+      <li><a class="button-link" onclick="showDiagram('Motor')">Motor</a></li>
+      <li><a class="button-link" onclick="showDiagram('Cell')">Cell</a></li>
+      <li><a class="button-link" onclick="showDiagram('LED')">LED</a></li>
+      <li><a class="button-link" onclick="showDiagram('Lamp')">Lamp</a></li>
+      <li><a class="button-link" onclick="showDiagram('Fuse')">Fuse</a></li>
+    </ul>
+    
+    <div class="diagram-content" id="Switch_on">
+      <h3>Switch_on</h3>
+      <img src="https://www.allaboutcircuits.com/uploads/articles/household-light-switch.jpg" alt="Switch On Diagram"style="width:450px;height:450px;">
+      <p>To turn on an electrical switch, you typically perform the following steps:
+
+        1. Locate the switch: Identify the physical switch that controls the flow of electricity to the device or circuit you want to turn on. Switches can be found on walls, power strips, or directly on the device itself.
+        
+        2. Check the switch position: Determine the current position of the switch. If it's a toggle switch, it may have two positions: up and down, indicating on and off, respectively. For a push-button or rocker switch, you may need to press or toggle it to the "on" position.
+        
+        3. Flip or press the switch: Depending on the type of switch, either flip it up or down, press it, or toggle it to the "on" position. This completes the circuit and allows electricity to flow.
+        
+        4. Verify power supply: After switching on the device or circuit, check if power is being supplied correctly. Look for indicators such as lights turning on or the device functioning as expected.
+        
+        Remember, always exercise caution when working with electricity. If you are unsure or unfamiliar with the electrical system, it's best to consult a qualified electrician for assistance.
+      </p>
+    </div>
+    
+    <div class="diagram-content" id="Switch_off">
+      <h3>Switch_off</h3>
+      <img src="https://www.teachengineering.org/content/cub_/lessons/cub_images/cub_electricity_lesson05_figure1.jpg" alt="Switch Off Diagram"style="width:450px;height:450px;">
+      <p>To switch off an electric circuit, you typically need to interrupt the flow of electricity by opening or breaking the circuit. Here are a few common methods to switch off an electric circuit:
+
+        1. Toggle Switch: A toggle switch is a lever or button that can be flipped or pushed to open or close a circuit. Flipping the switch to the "off" position breaks the circuit and stops the flow of electricity.
+        
+        2. Circuit Breaker: Circuit breakers are protective devices designed to automatically switch off a circuit when there is an electrical fault or overload. If a circuit breaker trips, you can reset it by flipping it to the "off" position and then back to the "on" position.
+        
+        3. Wall Switch: Wall switches are commonly used to control the flow of electricity to lights or outlets in buildings. Toggling the wall switch to the "off" position interrupts the circuit, cutting off power to the connected device.
+        
+        4. Unplugging: For devices that are powered by a plug, such as lamps, appliances, or electronic devices, simply unplugging them from the power source will switch off the circuit.
+        
+        It's important to note that when dealing with electrical circuits, safety precautions should always be followed. If you're unsure or uncomfortable handling electrical components, it's best to consult a qualified electrician.
+      </p>
+    </div>
+    
+    <div class="diagram-content" id="Battery">
+      <h3>Battery</h3>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLQ3vvWfT9TIYIF8VfU4D9optoBW8pq-Z9cgzEQevanQ&usqp=CAU&ec=48600113" alt="Battery Diagram"style="width:450px;height:450px;">
+      <p>To switch off an electric circuit powered by a battery, you can simply disconnect the battery from the circuit. Here's how you can do it:
+
+        1. Identify the battery: Locate the battery within the circuit. Batteries are typically housed in a battery holder or compartment, or they may be connected directly to the circuit.
+        
+        2. Disconnect the battery: Depending on the type of battery and its connection, you may need to follow the manufacturer's instructions to safely disconnect it. For example, if it's a removable battery, you can carefully remove it from its holder. If it's a non-removable battery, there might be a disconnect switch or button to turn off the circuit.
+        
+        3. Verify power interruption: After disconnecting the battery, check if the power to the circuit has been interrupted. You can do this by testing the device or load connected to the circuit.
+        
+        Always handle batteries with care and dispose of them properly. If you're uncertain about handling batteries or electrical circuits, seek guidance from a knowledgeable individual.
+      </p>
+    </div>
+    
+    <div class="diagram-content" id="Motor">
+      <h3>Motor</h3>
+      <img src="https://www.precisionmicrodrives.com/wp-content/uploads/2021/11/the-simplest-circuit-for-a-dc-motor.original.png " alt ="Diagram 1 Image" style="width:450px;height:450px;">
+      <p>An electric motor is a device that converts electrical energy into mechanical energy. When you switch on an electric motor, the following processes occur:
+
+        1. Power supply: The motor is connected to an electrical power source, such as a battery or mains electricity. When the circuit is closed, electricity flows to the motor.
+        
+        2. Electromagnetic effect: Inside the motor, there are coils of wire and a rotor. When electricity flows through the coils, it creates magnetic fields.
+        
+        3. Interaction of magnetic fields: The magnetic fields from the coils interact with the magnetic field of the rotor, causing the rotor to start rotating.
+        
+        4. Mechanical motion: As the rotor rotates, it drives the mechanical load connected to the motor, such as wheels in a car or a fan's blades.
+        
+        5. Control and speed: The speed and direction of the motor can be controlled by adjusting the amount and direction of the electric current flowing through the coils.
+        
+        Electric motors are widely used in various applications, from household appliances to industrial machinery, due to their efficiency and controllability.
+      </p>
+    </div>
+    
+    <div class="diagram-content" id="Cell">
+      <h3>Cell</h3>
+      <img src="https://media.sciencephoto.com/image/c0508141/400wm/C0508141-Electric_cell_and_circuit_symbol,_illustration.jpg " alt="Cell Diagram"style="width:450px;height:450px;">
+      <p>A cell is an electrochemical device that generates electrical energy through chemical reactions. When you use a cell in a circuit, the following processes take place:
+
+        1. Chemical reactions: Inside the cell, there are two electrodes (anode and cathode) immersed in an electrolyte solution. Chemical reactions occur at the electrodes, converting chemical energy into electrical energy.
+        
+        2. Electron flow: The chemical reactions cause a flow of electrons from the anode to the cathode through an external circuit, creating an electric current.
+        
+        3. Voltage potential: The potential difference between the anode and cathode creates the cell's voltage, which is the driving force for electron flow.
+        
+        4. Continuous operation: As long as the chemical reactions continue and there's sufficient reactant in the cell, it will produce a steady flow of electrons and maintain its voltage.
+        
+        Cells come in various types, such as alkaline, lithium-ion, and lead-acid, each suited for specific applications ranging from small electronic devices to large-scale energy storage systems.
+      </p>
+    </div>
+    
+    <div class="diagram-content" id="LED">
+      <h3>LED</h3>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk2218e_Y1PCK-BY0xEb1gjeZnU9k16ki9YUngbudsAQ&usqp=CAU&ec=48600113" alt="LED Diagram"style="width:450px;height:450px;">
+      <p>LED stands for Light Emitting Diode. When an LED is connected to a circuit and powered on, the following processes occur:
+
+        1. Semiconductor action: LEDs are made of semiconducting materials that emit light when electrons recombine with electron holes in the material.
+        
+        2. Forward bias: To make the LED emit light, it must be connected in the forward direction in the circuit. This allows current to flow through the LED, exciting the electrons.
+        
+        3. Light emission: As electrons recombine with electron holes, they release energy in the form of photons, producing visible light.
+        
+        4. Color emission: The color of the light emitted depends on the semiconductor material used in the LED. Different materials emit different colors, such as red, green, blue, or a combination to create white light.
+        
+        LEDs are widely used in lighting, displays, indicators, and many other applications due to their energy efficiency, long lifespan, and compact size.
+      </p>
+    </div>
+    
+    <div class="diagram-content" id="Lamp">
+      <h3>Lamp</h3>
+      <img src= https://www.researchgate.net/publication/224694533/figure/fig1/AS:302554161401864@1449145941772/T8-Conventional-Lighting-System-Circuit-Diagram.png " alt ="Diagram 1 Image" style="width:450px;height:450px;">
+      <p>A lamp is a general term for a device that produces light, and it can refer to various types of lighting sources, including incandescent, fluorescent, LED, and more. When you turn on a lamp, the following happens:
+
+        1. Power supply: The lamp is connected to an electrical power source, such as plugging it into a wall outlet or connecting it to a battery.
+        
+        2. Circuit completion: When you switch on the lamp, it completes the circuit, allowing electricity to flow through the lamp's lighting element.
+        
+        3. Light production: Depending on the type of lamp, different mechanisms are used to produce light. Incandescent lamps use a filament that glows when electricity passes through it, while fluorescent lamps emit light when excited gases inside the tube emit ultraviolet light, which is then converted to visible light by a phosphorescent coating.
+        
+        4. Illumination: The lamp emits light, providing illumination to its surroundings, making it possible for us to see in the dark or low-light conditions.
+        
+        Lamps are an essential part of everyday lighting needs and come in various designs and technologies to suit different preferences and applications.
+      </p>
+    </div>
+    
+    <div class="diagram-content" id="Fuse">
+      <h3>Fuse</h3>
+      <img src=https://www.allaboutcircuits.com/uploads/articles/s-shaped-curve.png " alt="Fuse Diagram"style="width:450px;height:450px;">
+      <p>A fuse is a safety device used to protect electrical circuits from excessive current and prevent damage to devices or electrical fires. When a fuse is in operation, the following occurs:
+
+        1. Current flow: When electricity flows through a circuit, it encounters the fuse, which is a small conductor designed to melt at a specific current threshold.
+        
+        2. Overcurrent condition: If there's an overcurrent condition in the circuit, caused by a short circuit or excessive load, the current passing through the fuse exceeds its rated value.
+        
+        3. Melting of the fuse: When the current exceeds the fuse's rating, the fuse wire or element melts, breaking the circuit and stopping the flow of electricity.
+        
+        4. Protection: By interrupting the circuit, the fuse protects the devices and components downstream from the excessive current, preventing damage or hazards.
+        
+        Once a fuse blows, it needs to be replaced with a new one of the same rating. Fuses are commonly used in electrical systems to provide reliable protection against overcurrent situations.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
+
